@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B814F92F732C9ACCC79795B4 /* Pods_RepeatSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930FFA1B563DB530A3A786FE /* Pods_RepeatSockets.framework */; };
+		E142FA2F267C8CC0006574D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142FA2E267C8CC0006574D5 /* AppDelegate.swift */; };
+		E142FA31267C8CC0006574D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142FA30267C8CC0006574D5 /* SceneDelegate.swift */; };
+		E142FA33267C8CC0006574D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142FA32267C8CC0006574D5 /* ViewController.swift */; };
+		E142FA36267C8CC0006574D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E142FA34267C8CC0006574D5 /* Main.storyboard */; };
+		E142FA38267C8CC4006574D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E142FA37267C8CC4006574D5 /* Assets.xcassets */; };
+		E142FA3B267C8CC4006574D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E142FA39267C8CC4006574D5 /* LaunchScreen.storyboard */; };
+		E142FA45267C8CDE006574D5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142FA44267C8CDE006574D5 /* NetworkManager.swift */; };
+		E142FA4C267C9101006574D5 /* clientapi.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142FA4B267C9101006574D5 /* clientapi.pb.swift */; };
+		E142FA4F267C9113006574D5 /* MessageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E142FA4E267C9113006574D5 /* MessageFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44A4DECAF589C887EB405B47 /* Pods-RepeatSockets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepeatSockets.debug.xcconfig"; path = "Target Support Files/Pods-RepeatSockets/Pods-RepeatSockets.debug.xcconfig"; sourceTree = "<group>"; };
+		930FFA1B563DB530A3A786FE /* Pods_RepeatSockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepeatSockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5A31900A85429A42355ADA /* Pods-RepeatSockets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepeatSockets.release.xcconfig"; path = "Target Support Files/Pods-RepeatSockets/Pods-RepeatSockets.release.xcconfig"; sourceTree = "<group>"; };
+		E142FA2B267C8CC0006574D5 /* RepeatSockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepeatSockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E142FA2E267C8CC0006574D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E142FA30267C8CC0006574D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E142FA32267C8CC0006574D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E142FA35267C8CC0006574D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E142FA37267C8CC4006574D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E142FA3A267C8CC4006574D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E142FA3C267C8CC4006574D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E142FA44267C8CDE006574D5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E142FA4B267C9101006574D5 /* clientapi.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clientapi.pb.swift; sourceTree = "<group>"; };
+		E142FA4E267C9113006574D5 /* MessageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E142FA28267C8CC0006574D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B814F92F732C9ACCC79795B4 /* Pods_RepeatSockets.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EFF55F5A4B833F180D036F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44A4DECAF589C887EB405B47 /* Pods-RepeatSockets.debug.xcconfig */,
+				AE5A31900A85429A42355ADA /* Pods-RepeatSockets.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1E42789AF3383B0339BBA95A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				930FFA1B563DB530A3A786FE /* Pods_RepeatSockets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E142FA22267C8CC0006574D5 = {
+			isa = PBXGroup;
+			children = (
+				E142FA2D267C8CC0006574D5 /* RepeatSockets */,
+				E142FA2C267C8CC0006574D5 /* Products */,
+				0EFF55F5A4B833F180D036F5 /* Pods */,
+				1E42789AF3383B0339BBA95A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E142FA2C267C8CC0006574D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E142FA2B267C8CC0006574D5 /* RepeatSockets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E142FA2D267C8CC0006574D5 /* RepeatSockets */ = {
+			isa = PBXGroup;
+			children = (
+				E142FA43267C8CCE006574D5 /* Services */,
+				E142FA2E267C8CC0006574D5 /* AppDelegate.swift */,
+				E142FA30267C8CC0006574D5 /* SceneDelegate.swift */,
+				E142FA32267C8CC0006574D5 /* ViewController.swift */,
+				E142FA34267C8CC0006574D5 /* Main.storyboard */,
+				E142FA37267C8CC4006574D5 /* Assets.xcassets */,
+				E142FA39267C8CC4006574D5 /* LaunchScreen.storyboard */,
+				E142FA3C267C8CC4006574D5 /* Info.plist */,
+			);
+			path = RepeatSockets;
+			sourceTree = "<group>";
+		};
+		E142FA43267C8CCE006574D5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E142FA4B267C9101006574D5 /* clientapi.pb.swift */,
+				E142FA44267C8CDE006574D5 /* NetworkManager.swift */,
+				E142FA4E267C9113006574D5 /* MessageFactory.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E142FA2A267C8CC0006574D5 /* RepeatSockets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E142FA3F267C8CC4006574D5 /* Build configuration list for PBXNativeTarget "RepeatSockets" */;
+			buildPhases = (
+				CE396DE5B2FA96D5DD911AAD /* [CP] Check Pods Manifest.lock */,
+				E142FA27267C8CC0006574D5 /* Sources */,
+				E142FA28267C8CC0006574D5 /* Frameworks */,
+				E142FA29267C8CC0006574D5 /* Resources */,
+				6B6F9BDE6CAC3768F4092A6B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RepeatSockets;
+			productName = RepeatSockets;
+			productReference = E142FA2B267C8CC0006574D5 /* RepeatSockets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E142FA23267C8CC0006574D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E142FA2A267C8CC0006574D5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E142FA26267C8CC0006574D5 /* Build configuration list for PBXProject "RepeatSockets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E142FA22267C8CC0006574D5;
+			productRefGroup = E142FA2C267C8CC0006574D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E142FA2A267C8CC0006574D5 /* RepeatSockets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E142FA29267C8CC0006574D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E142FA3B267C8CC4006574D5 /* LaunchScreen.storyboard in Resources */,
+				E142FA38267C8CC4006574D5 /* Assets.xcassets in Resources */,
+				E142FA36267C8CC0006574D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B6F9BDE6CAC3768F4092A6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepeatSockets/Pods-RepeatSockets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepeatSockets/Pods-RepeatSockets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepeatSockets/Pods-RepeatSockets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE396DE5B2FA96D5DD911AAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepeatSockets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E142FA27267C8CC0006574D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E142FA4F267C9113006574D5 /* MessageFactory.swift in Sources */,
+				E142FA45267C8CDE006574D5 /* NetworkManager.swift in Sources */,
+				E142FA33267C8CC0006574D5 /* ViewController.swift in Sources */,
+				E142FA2F267C8CC0006574D5 /* AppDelegate.swift in Sources */,
+				E142FA4C267C9101006574D5 /* clientapi.pb.swift in Sources */,
+				E142FA31267C8CC0006574D5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E142FA34267C8CC0006574D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E142FA35267C8CC0006574D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E142FA39267C8CC4006574D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E142FA3A267C8CC4006574D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E142FA3D267C8CC4006574D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E142FA3E267C8CC4006574D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E142FA40267C8CC4006574D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A4DECAF589C887EB405B47 /* Pods-RepeatSockets.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ54Y8KQBY;
+				INFOPLIST_FILE = RepeatSockets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stardev.RepeatSockets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E142FA41267C8CC4006574D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5A31900A85429A42355ADA /* Pods-RepeatSockets.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ54Y8KQBY;
+				INFOPLIST_FILE = RepeatSockets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stardev.RepeatSockets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E142FA26267C8CC0006574D5 /* Build configuration list for PBXProject "RepeatSockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E142FA3D267C8CC4006574D5 /* Debug */,
+				E142FA3E267C8CC4006574D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E142FA3F267C8CC4006574D5 /* Build configuration list for PBXNativeTarget "RepeatSockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E142FA40267C8CC4006574D5 /* Debug */,
+				E142FA41267C8CC4006574D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E142FA23267C8CC0006574D5 /* Project object */;
+}
